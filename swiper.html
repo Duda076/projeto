@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>projeto</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        * {
+            margin: 0 auto;
+            padding:0
+        }
+      
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            height: 400px;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            font: 88px Arial
+        }
+        
+        .fotos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .swiper-container {
+                width: 1500px;
+                height: 400px;
+            }
+            .img {
+                height: 300;
+                width: 30;
+            }
+            
+            
+
+        .swiper-pagination-bullet-active {
+            background: rgb(187, 16, 16);
+        }
+       
+    </style>
+</head>
+<body>
+    <!--SLIDE-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="img"></div>
+                <div class="swiper-slide"><img src="./images/eduardadoida.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/img17.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/img29.jpg " alt=""></div>
+                <div class="swiper-slide"><img src="./images/img26.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/img28.png" alt=""></div>
+               
+            </div>
+            <div class="swiper-pagination"></div>    
+        </div>
+
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination:{
+                el: '.swiper-pagination',
+                autoHeight: true
+            }
+        })
+    </script>
+    <!--FINAL-->
+    
+      <br>
+
+    <!--começo lightbox-->
+    <div class="fotos">
+
+        <a href="images/img7.jpg" 
+        data-title="Uma jovem babá descobre segredos sombrios enquanto cuida de dois
+         órfãos perturbados em uma mansão mal-assombrada do Maine,
+          nos Estados Unidos.
+          R$ 9,90" 
+        data-lightbox="photo1">
+        <img src="images/img7.jpg" 
+        width="200" >
+    </a>
+    <a href="images/img9.jpg" 
+    data-title=" SINOPSE NÃO REVELADA
+    R$ 9,90"  
+    data-lightbox="photo1">
+    <img src="images/img9.jpg" width="200" alt="">
+</a>
+
+<a href="images/img10.jpg" 
+data-title="Ana recebe uma proposta para ser influenciadora digital 
+de uma marca renomada. Ela larga a faculdade para investir todo o seu tempo 
+na página digital criando publicações, mas o trabalho que a princípio seria 
+incrível, foi ficando cada vez mais nocivo para ela mesma. Certo dia, 
+de tanto usar o celular, a jovem sofre um sério acidente de carro,
+ o que a leva a deixar sua função de influenciadora de lado e passar
+  um tempo na casa de seu avô Germano, no interior da cidade.
+  R$ 9,90"  
+data-lightbox="photo1">
+<img src="images/img10.jpg" 
+width="200" alt="">
+</a>
+
+<a href="images/img14.jpeg" 
+data-title="Part II é um futuro filme de terror americano
+ que é a sequência de A Quiet Place. O filme, escrito e dirigido por
+  John Krasinski, é estrelado por Emily Blunt, Cillian Murphy, Millicent 
+  Simmonds, Noah Jupe e Djimon Hounsou
+R$ 9,90"  
+data-lightbox="photo1">
+<img src="images/img14.jpeg" 
+width="200" alt="">
+</a>
+</div>
+<script src="js/lightbox-plus-jquery.min.js"></script> 
+<script src="js/lightbox.min.js"></script> 
+<!--FINAL DO LIGHTBOX-->
+
+ <!--COMEÇO WOW-->
+    <section class="wow flash">
+     Um filme pode ser categorizado em diferentes tipos de gêneros ao
+     mesmo tempo, sendo em um desses gêneros sempre o que é mais
+     destacado durante o longa.
+      Com a criação de cada vez mais filmes ao longo dos anos, esse meio
+     procura abordar com o passar dos anos ,assuntos originais e inovadores
+      com a intenção de atrair ainda mais pessoas a assistirem os filmes.
+    Portanto os diferentes tipos de gêneros que já existem até então não 
+    podem ser considerados como uma lista definitiva de todos os gêneros
+     que já foram criados.
+     <P></P>
+    Temos diversos tipos de gêneros, comédia, terror, ação, drama, romance,
+     e aqui voce encontra todos eles POR APENAS R$9,90. 
+     COMPRE LOGO O SEU!
+    
+    </section>
+ 
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init()
+    </script>
+   <!--FINAL-->
+   <!--zoom-->
+   <br>
+   <img width="200" id="img" data-zoom-image="./images/imgg.png" src="./images/imgg.png." alt="">
+<p>
+    LANÇAMENTOS 2020!
+</p>
+   <script src="./js/jquery-1.8.3.min.js"></script>
+   <script src="./js/jquery.elevatezoom.js"></script>
+   <script>
+       $('#img').elevateZoom({
+       zoomType: "inner",
+       cursor: "crosshair",
+       zoomWindowFadeIn: 500,
+       zoomWindowFadeOut: 750
+
+       
+  }); 
+   </script>
+
+   <!--fim do zoom-->
+</body>
+</html>
